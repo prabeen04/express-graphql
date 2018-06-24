@@ -9,3 +9,9 @@ var schema = buildSchema(
     }
     `
 );
+
+var root = {
+    hello: () =>{
+        return "Hello Prabeen";
+    }
+}
