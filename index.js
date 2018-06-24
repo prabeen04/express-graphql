@@ -12,7 +12,7 @@ var schema = buildSchema(
 
 var root = {
     hello: () =>{
-        return "Hello Prabeen";
+        return "Hello Prabeen , welcome to the world of GRAPHQL";
     }
 }
 
