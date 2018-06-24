@@ -22,3 +22,6 @@ app.use('/graphql', graphqlHTTP({
     rootValue: root,
     graphiql: true
 }))
+
+app.listen(4000);
+console.log('server started at port 4000')
