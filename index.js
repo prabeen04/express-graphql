@@ -58,10 +58,9 @@ var getCourses = function(args) {
 
 
 var root = {
-    hello: () => {
-        return "Hello Prabeen , welcome to the world of GRAPHQL";
-    }
-}
+    course: getCourse,
+    courses: getCourses
+};
 
 var app = express();
 app.use('/graphql', graphqlHTTP({
