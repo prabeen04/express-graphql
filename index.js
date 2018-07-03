@@ -7,19 +7,12 @@ var schema = buildSchema(
     type Query{
         hello: String
     }
-    type Query{
-        api: String
-    }
-
     `
 );
 
 var root = {
     hello: () =>{
         return "Hello Prabeen , welcome to the world of GRAPHQL";
-    },
-    api: () =>{
-        return "this is the graphql API";
     }
 }
 
