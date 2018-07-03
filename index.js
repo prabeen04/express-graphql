@@ -2,16 +2,21 @@ var express = require('express');
 var graphqlHTTP = require('express-graphql');
 var { buildSchema } = require('graphql');
 
-var schema = buildSchema(
-    `
-    type Query{
-        hello: String
-    }
-    `
-);
+var schema = buildSchema(`type Query {
+    course(id: Int!): Course
+    courses(topic: String): [Course]
+},
+type Course {
+    id: Int
+    title: String
+    author: String
+    description: String
+    topic: String
+    url: String
+}`);
 
 var root = {
-    hello: () =>{
+    hello: () => {
         return "Hello Prabeen , welcome to the world of GRAPHQL";
     }
 }
